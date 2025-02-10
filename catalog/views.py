@@ -17,7 +17,7 @@ def home(request):
     page_number = request.GET.get('page')
     products = paginator.get_page(page_number)
 
-    return render(request, 'home.html', {'products': products})
+    return render(request, 'home_head.html', {'products': products})
 
 
 def contacts(request):
